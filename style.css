@@ -79,13 +79,43 @@ body{
 /* unit will show cross/circle when user hovers over it. */
 
 .unit div:not(.cross):not(.circle):hover{
+    opacity: 0.5;
+    /* maybe use CSS variables with background to switch between circle and cross when players switch turns */
     background: url(https://library.kissclipart.com/20180902/xlq/kissclipart-orange-x-transparent-background-clipart-fossil-fue-a676aa326e9ea7a9.png);
     background-size: contain;
     height: 90px;
     width: 90px;
 }
 
+.win-msg{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,164,180,0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
 
+.win-msg.show{
+    display: flex;
+}
 
+button{
+    padding: 2%;
+    border-radius: 40px;
+    border: none;
+    margin: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
-
+button:hover{
+    transform: scale(1.3);
+    background: rgb(38,208,124);
+    color: rgb(255,184,28)
+}
