@@ -24,6 +24,15 @@ body{
     width: 100px;
     background: lightblue;
     border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.unit div{
+    height: 100px;
+    width: 100px;
 }
 
 .unit:first-child,
@@ -45,7 +54,36 @@ body{
 .unit:nth-child(8){
     border-bottom: 0;
 }
+/* use JS to assign these classes once user makes a selection on where to place cross or circle */
+/* set cursors to not allowed once a cross or circl has been place */
+.cross{
+    background: url(https://library.kissclipart.com/20180902/xlq/kissclipart-orange-x-transparent-background-clipart-fossil-fue-a676aa326e9ea7a9.png);
+    background-size: contain;
+    height: 90px;
+    width: 90px;
 
+}
+
+.circle{
+    background: url(https://i.pinimg.com/originals/32/90/be/3290bed6840554f71997d071206fea64.png);
+    background-size: contain;
+    height: 90px;
+    width: 90px;
+}
+
+.cross,
+.circle{
+    cursor: not-allowed;
+}
+
+/* unit will show cross/circle when user hovers over it. */
+
+.unit div:not(.cross):not(.circle):hover{
+    background: url(https://library.kissclipart.com/20180902/xlq/kissclipart-orange-x-transparent-background-clipart-fossil-fue-a676aa326e9ea7a9.png);
+    background-size: contain;
+    height: 90px;
+    width: 90px;
+}
 
 
 
