@@ -19,48 +19,34 @@ body{
     grid-template-columns: repeat(3,auto);
 }
 
-.play-area div{
+.unit{
     height: 100px;
     width: 100px;
     background: lightblue;
     border: 2px solid orange;
 }
 
-#unit1{
-    border-top: 0px;
-    border-left: 0ch;
+.unit:first-child,
+.unit:nth-child(2),
+.unit:nth-child(3){
+    border-top: 0;
 }
 
-#unit2{
-    border-top: 0ch;
+.unit:nth-child(3n+1){
+    border-left: 0;
 }
 
-#unit3{
-    border-top: 0ch;
-    border-right: 0ch;
+.unit:nth-child(3n+3){
+    border-right: 0;
 }
 
-#unit4{
-    border-left: 0ch;
+.unit:last-child,
+.unit:nth-child(7),
+.unit:nth-child(8){
+    border-bottom: 0;
 }
 
-#unit6{
-    border-right: 0ch;
-}
 
-#unit7{
-    border-bottom: 0ch;
-    border-left: 0ch;
-}
-
-#unit8{
-    border-bottom: 0ch;
-}
-
-#unit9{
-    border-bottom: 0ch;
-    border-right: 0ch;
-}
 
 
 
