@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --current-symbol : url('https://library.kissclipart.com/20180902/xlq/kissclipart-orange-x-transparent-background-clipart-fossil-fue-a676aa326e9ea7a9.png')
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -30,7 +34,7 @@ body{
     cursor: pointer;
 }
 
-.unit div{
+.placingArea{
     height: 100px;
     width: 100px;
 }
@@ -61,7 +65,6 @@ body{
     background-size: contain;
     height: 90px;
     width: 90px;
-
 }
 
 .circle{
@@ -78,10 +81,10 @@ body{
 
 /* unit will show cross/circle when user hovers over it. */
 
-.unit div:not(.cross):not(.circle):hover{
+.placingArea:not(.cross):not(.circle):hover{
     opacity: 0.5;
     /* maybe use CSS variables with background to switch between circle and cross when players switch turns */
-    background: url(https://library.kissclipart.com/20180902/xlq/kissclipart-orange-x-transparent-background-clipart-fossil-fue-a676aa326e9ea7a9.png);
+    background: var(--current-symbol);
     background-size: contain;
     height: 90px;
     width: 90px;
