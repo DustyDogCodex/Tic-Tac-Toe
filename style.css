@@ -1,0 +1,67 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.play-area{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,auto);
+}
+
+.play-area div{
+    height: 100px;
+    width: 100px;
+    background: lightblue;
+    border: 2px solid orange;
+}
+
+#unit1{
+    border-top: 0px;
+    border-left: 0ch;
+}
+
+#unit2{
+    border-top: 0ch;
+}
+
+#unit3{
+    border-top: 0ch;
+    border-right: 0ch;
+}
+
+#unit4{
+    border-left: 0ch;
+}
+
+#unit6{
+    border-right: 0ch;
+}
+
+#unit7{
+    border-bottom: 0ch;
+    border-left: 0ch;
+}
+
+#unit8{
+    border-bottom: 0ch;
+}
+
+#unit9{
+    border-bottom: 0ch;
+    border-right: 0ch;
+}
+
+
+
+
