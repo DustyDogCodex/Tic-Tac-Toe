@@ -1,6 +1,13 @@
 # Tic-Tac-Toe
 
-A repo for my Tic Tac Toe project.
+&#10060; <a href="https://dustydogcodex.github.io/Tic-Tac-Toe/">LIVE SITE</a> &#8413;
+
+A repo for my Tic Tac Toe project. Through this project I learned:
+
+1) How to create and change CSS variables using JavaScript.
+2) How to use and work with advanced CSS selectors like :not and :hover.
+3) Its a lot easier to assign classes than trying to change the properties of :hover.
+4) Using JavaScript to make a webiste more dynamic.
 
 Images used in the making of this project were used from:
 
