@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-&#10060; <a href="https://dustydogcodex.github.io/Tic-Tac-Toe/">LIVE SITE</a> &#8413;
+&#10060; <a href="https://dustydogcodex.github.io/Tic-Tac-Toe/">LIVE SITE</a> &#11093;
 
 A repo for my Tic Tac Toe project. Through this project I learned:
 
