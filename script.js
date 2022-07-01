@@ -48,6 +48,7 @@ function handleClick(e) {
     }
 }
 
+//places the symbols on the selected area
 function placeSymbol(area,currentSymbol){
     area.classList.add(currentSymbol)
 }
@@ -57,9 +58,7 @@ function switchTurns() {
     playerTurn = !playerTurn
 }
 
-//currently not changing image on hover. I think its because i'm not assigning style properties to the right hover affect.
-//need to more work to find a solution.
-//should swithc to adding classes to playingArea and seeing if 3 of them are in a row!
+//swithces hovering symbols everytime after placing a mark down on the board
 function switchSymbol() {
     if(playerTurn){
         document.documentElement.style.setProperty('--current-symbol', 'url(https://library.kissclipart.com/20180902/xlq/kissclipart-orange-x-transparent-background-clipart-fossil-fue-a676aa326e9ea7a9.png)');
@@ -77,6 +76,7 @@ function checkWin(currentSymbol){
     })
 }
 
+//function checks for the end of the game or a draw and returns corresponding result.
 function endGame(draw){
     if(draw){
         winningTextElement.innerText = 'Draw!'
@@ -86,6 +86,7 @@ function endGame(draw){
     winningMessageElement.classList.add('show')
 }
 
+//checks if the game is a draw
 function isDraw(){
     return [...placingAreas].every(area => {
         return area.classList.contains('cross') || area.classList.contains('circle')
